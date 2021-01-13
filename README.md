@@ -1,1 +1,1 @@
-# Seismic Irregularities Florchart w/ ASCE 7-16
+# Seismic Irregularities Flowchart w/ ASCE 7-16

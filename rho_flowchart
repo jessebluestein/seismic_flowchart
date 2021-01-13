@@ -1,0 +1,68 @@
+digraph G {
+	"Determine Seismic Design Category (SDC)" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"SDC A, B or C" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"SDC D, E or F" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"ρ = 1.0" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"ρ = 1.3" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"Flexible diaphragm" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"Rigid diaphragm" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"Extreme torsional irregularity" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"Not extreme torsional irregularity" [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"Each story resisting more than 35% of the base shear in
+the direction of interest shall complies with Table 12.3-3." [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"Structures are regular in plan at all levels provided
+that the seismic force-resisting systems consist of at
+least two bays of seismic force-resisting perimeter framing
+on each side of the structure in each orthogonal direction at
+each story resisting more than 35% of the base shear. The number
+of bays for a shear wall shall be calculated as the length of shear
+wall divided by the story height or two times the length of shear
+wall divided by the story height, hsx, for light-frame construction." [color=black fillcolor=grey shape=box style="rounded, filled"]
+	"Determine Seismic Design Category (SDC)" -> "SDC A, B or C" [splines=false]
+	"Determine Seismic Design Category (SDC)" -> "SDC D, E or F" [splines=false]
+	"SDC A, B or C" -> "ρ = 1.0" [splines=false]
+	"SDC D, E or F" -> "Flexible diaphragm" [splines=false]
+	"SDC D, E or F" -> "Rigid diaphragm" [splines=false]
+	"Rigid diaphragm" -> "Extreme torsional irregularity" [splines=false]
+	"Rigid diaphragm" -> "Not extreme torsional irregularity" [splines=false]
+	"Not extreme torsional irregularity" -> "Each story resisting more than 35% of the base shear in
+the direction of interest shall complies with Table 12.3-3." [splines=false]
+	"Each story resisting more than 35% of the base shear in
+the direction of interest shall complies with Table 12.3-3." -> "Structures are regular in plan at all levels provided
+that the seismic force-resisting systems consist of at
+least two bays of seismic force-resisting perimeter framing
+on each side of the structure in each orthogonal direction at
+each story resisting more than 35% of the base shear. The number
+of bays for a shear wall shall be calculated as the length of shear
+wall divided by the story height or two times the length of shear
+wall divided by the story height, hsx, for light-frame construction." [label="not satisfied" splines=false]
+	"Extreme torsional irregularity" -> "ρ = 1.3" [splines=false]
+	"Flexible diaphragm" -> "Each story resisting more than 35% of the base shear in
+the direction of interest shall complies with Table 12.3-3." [splines=false]
+	"Flexible diaphragm" -> "Structures are regular in plan at all levels provided
+that the seismic force-resisting systems consist of at
+least two bays of seismic force-resisting perimeter framing
+on each side of the structure in each orthogonal direction at
+each story resisting more than 35% of the base shear. The number
+of bays for a shear wall shall be calculated as the length of shear
+wall divided by the story height or two times the length of shear
+wall divided by the story height, hsx, for light-frame construction." [splines=false]
+	"Each story resisting more than 35% of the base shear in
+the direction of interest shall complies with Table 12.3-3." -> "ρ = 1.0" [label=satisfied splines=false]
+	"Structures are regular in plan at all levels provided
+that the seismic force-resisting systems consist of at
+least two bays of seismic force-resisting perimeter framing
+on each side of the structure in each orthogonal direction at
+each story resisting more than 35% of the base shear. The number
+of bays for a shear wall shall be calculated as the length of shear
+wall divided by the story height or two times the length of shear
+wall divided by the story height, hsx, for light-frame construction." -> "ρ = 1.0" [label=satisfied splines=false]
+	"Structures are regular in plan at all levels provided
+that the seismic force-resisting systems consist of at
+least two bays of seismic force-resisting perimeter framing
+on each side of the structure in each orthogonal direction at
+each story resisting more than 35% of the base shear. The number
+of bays for a shear wall shall be calculated as the length of shear
+wall divided by the story height or two times the length of shear
+wall divided by the story height, hsx, for light-frame construction." -> "ρ = 1.3" [label="not satisfied" splines=false]
+}
